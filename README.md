@@ -44,6 +44,16 @@ project-root/
 - **webtop** – Lightweight remote Linux desktop with browser.
 
 ---
+## 📊 How RAG Works
+
+```mermaid
+flowchart TD
+    A[User Input in UI] -->|Query or Document| B[RAG API]
+    B -->|Embeds Text| C[ChromaDB Vector Store]
+    C -->|Finds Relevant Context| D[Ollama LLM]
+    D -->|Generates Response| A
+```
+---
 
 ## 🚀 Getting Started
 
@@ -58,7 +68,7 @@ docker compose up --build -d
 ```
 ### 3. Access the services:
 - **Frontend UI**: http://localhost:8501
-- **Webtop (GUI):**: http://localhost:3000
+- **Webtop (GUI)**: http://localhost:3000
 - **SSH Dev Machine**: `ssh -p 2222 user@localhost`
 
 ## 📌 Usage
