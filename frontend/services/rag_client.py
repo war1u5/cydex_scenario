@@ -12,15 +12,15 @@ def ingest_text(doc_id: str | None, text: str) -> dict:
     except httpx.HTTPError as e:
         return {"ok": False, "error": f"HTTP error: {e}", "raw": getattr(e, "response", None).text if hasattr(e, "response") and e.response else ""}
 
-def ingest_file(file_bytes: bytes, filename: str, doc_id: str | None) -> dict:
-    try:
-        files = {"file": (filename, file_bytes, "text/plain")}
-        data = {"doc_id": doc_id} if doc_id else {}
-        r = httpx.post(f"{RAG_API_URL}/ingest_file", data=data, files=files, timeout=120.0)
-        r.raise_for_status()
-        return r.json()
-    except httpx.HTTPError as e:
-        return {"ok": False, "error": f"HTTP error: {e}", "raw": getattr(e, "response", None).text if hasattr(e, "response") and e.response else ""}
+# def ingest_file(file_bytes: bytes, filename: str, doc_id: str | None) -> dict:
+#     try:
+#         files = {"file": (filename, file_bytes, "text/plain")}
+#         data = {"doc_id": doc_id} if doc_id else {}
+#         r = httpx.post(f"{RAG_API_URL}/ingest_file", data=data, files=files, timeout=120.0)
+#         r.raise_for_status()
+#         return r.json()
+#     except httpx.HTTPError as e:
+#         return {"ok": False, "error": f"HTTP error: {e}", "raw": getattr(e, "response", None).text if hasattr(e, "response") and e.response else ""}
 
 def query_rag(question: str, k: int = 4) -> dict:
     payload = {"question": question, "k": k}

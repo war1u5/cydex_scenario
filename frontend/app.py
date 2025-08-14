@@ -1,7 +1,8 @@
 import streamlit as st
 import os
 from services.llm_client import query_llm
-from services.rag_client import ingest_text, ingest_file, query_rag
+# from services.rag_client import ingest_text, ingest_file, query_rag
+from services.rag_client import ingest_text, query_rag
 
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3")
 
@@ -25,7 +26,8 @@ with tab_chat:
 
 # ---- RAG Ingest tab ----
 with tab_ingest:
-    st.subheader("Add text or a file to the knowledge base")
+    # st.subheader("Add text or a file to the knowledge base")
+    st.subheader("Add text to the knowledge base")
     with st.form("ingest_text_form", clear_on_submit=False):
         doc_id = st.text_input("Optional Document ID (helps you track sources)")
         text = st.text_area("Text to ingest", height=180)
@@ -43,22 +45,22 @@ with tab_ingest:
                     if res.get("raw"):
                         st.code(res["raw"])
 
-    st.markdown("---")
-    st.subheader("Or upload a file")
-    up_doc_id = st.text_input("Optional Document ID for file")
-    uploaded = st.file_uploader("Upload a .txt or .md file", type=["txt", "md"])
-    if st.button("Ingest File"):
-        if not uploaded:
-            st.warning("Please choose a file first.")
-        else:
-            with st.spinner("Uploading & ingesting..."):
-                res = ingest_file(uploaded.read(), uploaded.name, up_doc_id or None)
-            if res.get("ok"):
-                st.success(f"File ingested as doc_id={res.get('doc_id')}")
-            else:
-                st.error(f"Ingest failed: {res.get('error')}")
-                if res.get("raw"):
-                    st.code(res["raw"])
+    # st.markdown("---")
+    # st.subheader("Or upload a file")
+    # up_doc_id = st.text_input("Optional Document ID for file")
+    # uploaded = st.file_uploader("Upload a .txt or .md file", type=["txt", "md"])
+    # if st.button("Ingest File"):
+    #     if not uploaded:
+    #         st.warning("Please choose a file first.")
+    #     else:
+    #         with st.spinner("Uploading & ingesting..."):
+    #             res = ingest_file(uploaded.read(), uploaded.name, up_doc_id or None)
+    #         if res.get("ok"):
+    #             st.success(f"File ingested as doc_id={res.get('doc_id')}")
+    #         else:
+    #             st.error(f"Ingest failed: {res.get('error')}")
+    #             if res.get("raw"):
+    #                 st.code(res["raw"])
 
 # ---- RAG Query tab ----
 with tab_query:
