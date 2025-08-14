@@ -25,6 +25,7 @@ Includes a lightweight dev machine, web-based desktop (Webtop), and a Streamlit 
 ---
 
 ## 🗂 Project Structure
+```bash
 project-root/
 ├── docker-compose.yml # Orchestrates all services
 ├── llm/ # Ollama build & init scripts
@@ -32,7 +33,7 @@ project-root/
 ├── frontend/ # Streamlit frontend
 ├── dev-machine/ # CLI dev environment
 └── webtop-config/ # Webtop persistent storage
-
+```
 ---
 
 ## 📦 Services
