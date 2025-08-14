@@ -35,9 +35,28 @@ project-root/
 
 ---
 
+## 📦 Services
+- **ollama** – LLM service for natural language processing.
+- **rag-api** – Backend for document ingestion & retrieval.
+- **llm-ui** – Streamlit web app for querying the LLM.
+- **dev-machine** – SSH-accessible terminal environment.
+- **webtop** – Lightweight remote Linux desktop with browser.
+
+---
+
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/war1u5/cydex_scenario
 cd project-root
+```
+### 2. Build and start all services:
+```bash
+docker compose up --build -d
+```
+### 3. Access the services:
+- **Frontend UI**: http://localhost:8501
+- **Webtop (GUI):**: http://localhost:3000
+- **SSH Dev Machine**: `ssh -p 2222 user@localhost`
+
