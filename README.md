@@ -61,3 +61,13 @@ docker compose up --build -d
 - **Webtop (GUI):**: http://localhost:3000
 - **SSH Dev Machine**: `ssh -p 2222 user@localhost`
 
+## 📌 Usage
+- Use **/ingest** endpoint in RAG API to store documents.
+- Use **/query** endpoint to retrieve context-aware answers.
+- Directly interact with the LLM via the Streamlit UI.
+- Develop inside `dev-machine` or use `webtop` for GUI tools.
+
+## ⚠️ Notes
+- Ensure Docker and Docker Compose are installed.
+- Update `.env` or environment variables for custom configuration.
+- The system is meant for local/offline usage; secure before exposing.
