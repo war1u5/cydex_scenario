@@ -22,7 +22,7 @@ def ingest_text(doc_id: str | None, text: str) -> dict:
 #     except httpx.HTTPError as e:
 #         return {"ok": False, "error": f"HTTP error: {e}", "raw": getattr(e, "response", None).text if hasattr(e, "response") and e.response else ""}
 
-def query_rag(question: str, k: int = 4) -> dict:
+def query_rag(question: str, k: int = 2) -> dict:
     payload = {"question": question, "k": k}
     try:
         r = httpx.post(f"{RAG_API_URL}/query", json=payload, timeout=120.0)
