@@ -1,0 +1,88 @@
+---
+
+services:
+  ollama:
+    build:
+      context: ./llm
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    networks:
+      - rag-net
+
+  llm-ui:
+    build:
+      context: ./frontend
+    container_name: llm-ui
+    ports:
+      - "8501:8501"
+    environment:
+      - OLLAMA_HOST=ollama
+      - OLLAMA_PORT=11434
+      - OLLAMA_MODEL=llama3
+      - RAG_API_URL=http://rag-api:8000
+    depends_on:
+      - ollama
+    networks:
+      - rag-net
+
+  dev-machine:
+    build:
+      context: ./dev-machine
+    container_name: dev-machine
+    ports:
+      - "2222:22"
+    tty: true
+    stdin_open: true
+    networks:
+      - rag-net
+    depends_on:
+      - ollama
+
+  webtop:
+    image: lscr.io/linuxserver/webtop:latest
+    container_name: webtop
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./webtop-config:/config
+    ports:
+      - 3000:3000
+      - 3001:3001
+    shm_size: "1gb"
+    networks:
+      - rag-net
+    restart: unless-stopped
+
+  rag-api:
+    build:
+      context: ./rag-api
+    container_name: rag-api
+    environment:
+      - OLLAMA_HOST=ollama
+      - OLLAMA_PORT=11434
+      - EMBED_MODEL=nomic-embed-text
+      - LLM_MODEL=llama3
+      - CHROMA_DIR=/data/chroma
+      - CHROMA_COLLECTION=docs_ollama768
+      - CHROMA_TELEMETRY=FALSE
+    volumes:
+      - rag_chroma:/data/chroma
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ollama
+    networks:
+      - rag-net
+
+volumes:
+  ollama_models:
+  rag_chroma:
+
+networks:
+  rag-net:
+    driver: bridge
