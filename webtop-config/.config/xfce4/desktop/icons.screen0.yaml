@@ -15,6 +15,9 @@ configs:
     "/":
       row: 1
       col: 0
+    "/config/Desktop/fake_newspaper3k.txt":
+      row: 2
+      col: 0
     "/config":
       row: 0
       col: 0

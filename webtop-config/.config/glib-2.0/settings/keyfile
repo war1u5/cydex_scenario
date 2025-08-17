@@ -20,3 +20,12 @@ cursor-blink-time=1200
 cursor-size=32
 cursor-theme='Adwaita'
 font-name='Sans 10'
+
+[org/xfce/mousepad/state/application]
+session=['1;;+file:///config/Desktop/fake_newspaper3k.txt']
+
+[org/xfce/mousepad/state/window]
+width=640
+height=480
+maximized=false
+fullscreen=false
