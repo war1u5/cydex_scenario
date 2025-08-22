@@ -1,0 +1,32 @@
+---
+
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2
+    container_name: opensearch
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=MyS3curePass!
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+    ports: ["9200:9200","9600:9600"]
+    networks: [logs-net]
+    restart: unless-stopped
+
+  dashboards:
+    image: opensearchproject/opensearch-dashboards:2
+    container_name: dashboards
+    environment:
+      - OPENSEARCH_HOSTS=https://opensearch:9200
+      - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true
+    depends_on:
+      - opensearch
+    ports: ["5601:5601"]
+    networks: [logs-net]
+    restart: unless-stopped
+
+networks:
+  logs-net:
+    driver: bridge
