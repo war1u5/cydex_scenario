@@ -9,20 +9,21 @@ OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3")
 st.set_page_config(page_title="DMZ LLM", layout="centered")
 st.title("DMZ LLM")
 
-tab_chat, tab_ingest, tab_query = st.tabs(["💬 Chat", "📥 RAG Ingest", "🔎 RAG Query"])
+# tab_chat, 
+tab_ingest, tab_query = st.tabs(["📥 RAG Ingest", "🔎 RAG Query"])
 
-# ---- Chat tab ----
-with tab_chat:
-    st.markdown("Enter a prompt or paste a document below:")
-    prompt = st.text_area("Prompt", height=200, key="chat_prompt")
-    if st.button("Send to LLM", key="chat_send"):
-        if not prompt.strip():
-            st.warning("Please enter a prompt before sending.")
-        else:
-            with st.spinner("Waiting for LLM response..."):
-                response = query_llm(prompt, model=OLLAMA_MODEL)
-                st.success("LLM responded:")
-                st.write(response)
+# # ---- Chat tab ----
+# with tab_chat:
+#     st.markdown("Enter a prompt or paste a document below:")
+#     prompt = st.text_area("Prompt", height=200, key="chat_prompt")
+#     if st.button("Send to LLM", key="chat_send"):
+#         if not prompt.strip():
+#             st.warning("Please enter a prompt before sending.")
+#         else:
+#             with st.spinner("Waiting for LLM response..."):
+#                 response = query_llm(prompt, model=OLLAMA_MODEL)
+#                 st.success("LLM responded:")
+#                 st.write(response)
 
 # ---- RAG Ingest tab ----
 with tab_ingest:
