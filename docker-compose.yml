@@ -1,19 +1,5 @@
 ---
 
-# x-logging: &default-logging
-#   driver: "json-file"
-#   options:
-#     max-size: "10m"
-#     max-file: "3"
-
-# x-restart: &default-restart
-#   restart: unless-stopped
-
-# x-common: &default-common
-#   init: true
-#   logging: *default-logging
-#   stop_grace_period: 30s
-
 services:
   ollama:
     build:
@@ -25,13 +11,6 @@ services:
       - ollama_models:/root/.ollama
     networks:
       - rag-net
-    # <<: [*default-common, *default-restart]
-    # healthcheck:
-    #   test: ["CMD-SHELL", "curl -fsS http://localhost:11434/api/tags >/dev/null || curl -fsS http://localhost:11434/api/version >/dev/null"]
-    #   interval: 10s
-    #   timeout: 5s
-    #   retries: 10
-    #   start_period: 20s
 
   llm-ui:
     build:
