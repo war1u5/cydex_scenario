@@ -14,7 +14,9 @@ services:
     ports: ["9200:9200","9600:9600"]
     volumes:
       - os_data:/usr/share/opensearch/data
-    networks: [logs-net]
+    networks:
+      logs-net:
+        ipv4_address: 172.20.0.2
     restart: unless-stopped
 
   dashboards:
@@ -28,7 +30,9 @@ services:
     ports: ["5601:5601"]
     volumes:
       - os_dash_data:/usr/share/opensearch-dashboards/data
-    networks: [logs-net]
+    networks:
+      logs-net:
+        ipv4_address: 172.20.0.3
     restart: unless-stopped
 
 volumes:
@@ -38,3 +42,6 @@ volumes:
 networks:
   logs-net:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

@@ -1,0 +1,6 @@
+{"index": {"_index": "ssh-logs-2025-04", "_id": 1}}
+{"@timestamp": "2025-04-14T15:04:30.000000Z", "event_type": "AUTH", "username": "andrei", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "SUCCESS", "auth_method": "password"}
+{"index": {"_index": "ssh-logs-2025-04", "_id": 2}}
+{"@timestamp": "2025-04-14T15:05:05.000000Z", "event_type": "SESSION_OPEN", "username": "andrei", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "OPEN", "session_id": "ssh-sess-7f2b"}
+{"index": {"_index": "ssh-logs-2025-04", "_id": 3}}
+{"@timestamp": "2025-04-14T15:34:45.000000Z", "event_type": "SESSION_CLOSE", "username": "andrei", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "CLOSE", "session_id": "ssh-sess-7f2b"}

@@ -1,0 +1,308 @@
+{"index": {"_index": "vpn-logs-2025-04", "_id": 1}}
+{"@timestamp": "2025-04-10T07:02:37.000000Z", "event": "CONNECT", "username": "sabin.mateescu", "src_ip": "86.120.1.216", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 2}}
+{"@timestamp": "2025-04-10T07:40:37.000000Z", "event": "DISCONNECT", "username": "sabin.mateescu", "src_ip": "86.120.1.216", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 3}}
+{"@timestamp": "2025-04-10T07:58:52.000000Z", "event": "CONNECT", "username": "anca.rus", "src_ip": "86.120.1.196", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 4}}
+{"@timestamp": "2025-04-10T08:36:10.000000Z", "event": "CONNECT", "username": "emil.voinea", "src_ip": "86.120.1.42", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 5}}
+{"@timestamp": "2025-04-10T08:41:44.000000Z", "event": "CONNECT", "username": "ovidiu.pop", "src_ip": "86.120.1.159", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 6}}
+{"@timestamp": "2025-04-10T08:46:52.000000Z", "event": "DISCONNECT", "username": "anca.rus", "src_ip": "86.120.1.196", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 7}}
+{"@timestamp": "2025-04-10T10:25:10.000000Z", "event": "DISCONNECT", "username": "emil.voinea", "src_ip": "86.120.1.42", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 8}}
+{"@timestamp": "2025-04-10T11:23:44.000000Z", "event": "DISCONNECT", "username": "ovidiu.pop", "src_ip": "86.120.1.159", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 9}}
+{"@timestamp": "2025-04-10T11:30:14.000000Z", "event": "CONNECT", "username": "tudor.iliescu", "src_ip": "86.120.1.64", "vpn_ip": "10.8.0.10", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 10}}
+{"@timestamp": "2025-04-10T12:07:11.000000Z", "event": "CONNECT", "username": "ovidiu.pop", "src_ip": "86.120.0.67", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 11}}
+{"@timestamp": "2025-04-10T13:20:47.000000Z", "event": "CONNECT", "username": "petre.lazar", "src_ip": "86.120.0.8", "vpn_ip": "10.8.0.20", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 12}}
+{"@timestamp": "2025-04-10T13:59:47.000000Z", "event": "DISCONNECT", "username": "petre.lazar", "src_ip": "86.120.0.8", "vpn_ip": "10.8.0.20", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 13}}
+{"@timestamp": "2025-04-10T14:04:14.000000Z", "event": "DISCONNECT", "username": "tudor.iliescu", "src_ip": "86.120.1.64", "vpn_ip": "10.8.0.10", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 14}}
+{"@timestamp": "2025-04-10T14:35:11.000000Z", "event": "DISCONNECT", "username": "ovidiu.pop", "src_ip": "86.120.0.67", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 15}}
+{"@timestamp": "2025-04-10T16:06:53.000000Z", "event": "CONNECT", "username": "emil.voinea", "src_ip": "34.76.1.9", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 16}}
+{"@timestamp": "2025-04-10T17:48:53.000000Z", "event": "DISCONNECT", "username": "emil.voinea", "src_ip": "34.76.1.9", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 17}}
+{"@timestamp": "2025-04-10T18:33:41.000000Z", "event": "CONNECT", "username": "ioan.mois", "src_ip": "86.120.1.235", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 18}}
+{"@timestamp": "2025-04-10T18:40:14.000000Z", "event": "CONNECT", "username": "andreea.enache", "src_ip": "86.120.0.63", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 19}}
+{"@timestamp": "2025-04-10T18:46:19.000000Z", "event": "CONNECT", "username": "ioan.mois", "src_ip": "86.120.1.164", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 20}}
+{"@timestamp": "2025-04-10T19:16:47.000000Z", "event": "CONNECT", "username": "paul.sandu", "src_ip": "86.120.0.57", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 21}}
+{"@timestamp": "2025-04-10T19:46:32.000000Z", "event": "CONNECT", "username": "alice.draghici", "src_ip": "86.120.0.68", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 22}}
+{"@timestamp": "2025-04-10T19:55:19.000000Z", "event": "DISCONNECT", "username": "ioan.mois", "src_ip": "86.120.1.164", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 23}}
+{"@timestamp": "2025-04-10T20:44:41.000000Z", "event": "DISCONNECT", "username": "ioan.mois", "src_ip": "86.120.1.235", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 24}}
+{"@timestamp": "2025-04-10T21:08:32.000000Z", "event": "DISCONNECT", "username": "alice.draghici", "src_ip": "86.120.0.68", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 25}}
+{"@timestamp": "2025-04-10T21:18:14.000000Z", "event": "DISCONNECT", "username": "andreea.enache", "src_ip": "86.120.0.63", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 26}}
+{"@timestamp": "2025-04-10T21:26:47.000000Z", "event": "DISCONNECT", "username": "paul.sandu", "src_ip": "86.120.0.57", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 27}}
+{"@timestamp": "2025-04-11T08:00:52.000000Z", "event": "CONNECT", "username": "bogdan.pavel", "src_ip": "86.120.1.116", "vpn_ip": "10.8.0.18", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 28}}
+{"@timestamp": "2025-04-11T08:27:23.000000Z", "event": "CONNECT", "username": "anca.rus", "src_ip": "34.76.1.75", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 29}}
+{"@timestamp": "2025-04-11T09:28:15.000000Z", "event": "CONNECT", "username": "florin.cazan", "src_ip": "86.120.0.18", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 30}}
+{"@timestamp": "2025-04-11T10:45:23.000000Z", "event": "DISCONNECT", "username": "anca.rus", "src_ip": "34.76.1.75", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 31}}
+{"@timestamp": "2025-04-11T11:00:52.000000Z", "event": "DISCONNECT", "username": "bogdan.pavel", "src_ip": "86.120.1.116", "vpn_ip": "10.8.0.18", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 32}}
+{"@timestamp": "2025-04-11T12:28:15.000000Z", "event": "DISCONNECT", "username": "florin.cazan", "src_ip": "86.120.0.18", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 33}}
+{"@timestamp": "2025-04-11T14:58:50.000000Z", "event": "CONNECT", "username": "florin.cazan", "src_ip": "86.120.1.66", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 34}}
+{"@timestamp": "2025-04-11T15:30:50.000000Z", "event": "DISCONNECT", "username": "florin.cazan", "src_ip": "86.120.1.66", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 35}}
+{"@timestamp": "2025-04-11T15:56:34.000000Z", "event": "CONNECT", "username": "paul.sandu", "src_ip": "86.120.1.47", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 36}}
+{"@timestamp": "2025-04-11T16:11:34.000000Z", "event": "DISCONNECT", "username": "paul.sandu", "src_ip": "86.120.1.47", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 37}}
+{"@timestamp": "2025-04-11T18:40:03.000000Z", "event": "CONNECT", "username": "roxana.toma", "src_ip": "86.120.1.15", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 38}}
+{"@timestamp": "2025-04-11T18:59:24.000000Z", "event": "CONNECT", "username": "daniela.rusu", "src_ip": "86.120.0.162", "vpn_ip": "10.8.0.19", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 39}}
+{"@timestamp": "2025-04-11T19:48:24.000000Z", "event": "CONNECT", "username": "sabin.mateescu", "src_ip": "34.76.1.79", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 40}}
+{"@timestamp": "2025-04-11T20:19:24.000000Z", "event": "DISCONNECT", "username": "daniela.rusu", "src_ip": "86.120.0.162", "vpn_ip": "10.8.0.19", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 41}}
+{"@timestamp": "2025-04-11T20:42:03.000000Z", "event": "DISCONNECT", "username": "roxana.toma", "src_ip": "86.120.1.15", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 42}}
+{"@timestamp": "2025-04-11T22:10:24.000000Z", "event": "DISCONNECT", "username": "sabin.mateescu", "src_ip": "34.76.1.79", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 43}}
+{"@timestamp": "2025-04-12T07:06:29.000000Z", "event": "CONNECT", "username": "horia.badea", "src_ip": "86.120.0.96", "vpn_ip": "10.8.0.15", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 44}}
+{"@timestamp": "2025-04-12T08:05:29.000000Z", "event": "DISCONNECT", "username": "horia.badea", "src_ip": "86.120.0.96", "vpn_ip": "10.8.0.15", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 45}}
+{"@timestamp": "2025-04-12T08:28:04.000000Z", "event": "CONNECT", "username": "suzana.onica", "src_ip": "86.120.0.178", "vpn_ip": "10.8.0.12", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 46}}
+{"@timestamp": "2025-04-12T08:49:04.000000Z", "event": "DISCONNECT", "username": "suzana.onica", "src_ip": "86.120.0.178", "vpn_ip": "10.8.0.12", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 47}}
+{"@timestamp": "2025-04-12T08:56:20.000000Z", "event": "CONNECT", "username": "emil.voinea", "src_ip": "34.76.1.222", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 48}}
+{"@timestamp": "2025-04-12T09:25:10.000000Z", "event": "CONNECT", "username": "mara.petre", "src_ip": "86.120.1.221", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 49}}
+{"@timestamp": "2025-04-12T10:31:10.000000Z", "event": "DISCONNECT", "username": "mara.petre", "src_ip": "86.120.1.221", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 50}}
+{"@timestamp": "2025-04-12T10:47:20.000000Z", "event": "DISCONNECT", "username": "emil.voinea", "src_ip": "34.76.1.222", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 51}}
+{"@timestamp": "2025-04-12T13:42:10.000000Z", "event": "CONNECT", "username": "suzana.onica", "src_ip": "86.120.1.237", "vpn_ip": "10.8.0.12", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 52}}
+{"@timestamp": "2025-04-12T13:51:25.000000Z", "event": "CONNECT", "username": "carla.dascalu", "src_ip": "86.120.0.211", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 53}}
+{"@timestamp": "2025-04-12T14:15:10.000000Z", "event": "DISCONNECT", "username": "suzana.onica", "src_ip": "86.120.1.237", "vpn_ip": "10.8.0.12", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 54}}
+{"@timestamp": "2025-04-12T14:44:25.000000Z", "event": "DISCONNECT", "username": "carla.dascalu", "src_ip": "86.120.0.211", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 55}}
+{"@timestamp": "2025-04-12T14:50:56.000000Z", "event": "CONNECT", "username": "paul.sandu", "src_ip": "86.120.0.108", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 56}}
+{"@timestamp": "2025-04-12T15:04:32.000000Z", "event": "CONNECT", "username": "roxana.toma", "src_ip": "86.120.0.47", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 57}}
+{"@timestamp": "2025-04-12T16:09:56.000000Z", "event": "DISCONNECT", "username": "paul.sandu", "src_ip": "86.120.0.108", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 58}}
+{"@timestamp": "2025-04-12T17:32:46.000000Z", "event": "CONNECT", "username": "horia.badea", "src_ip": "86.120.1.1", "vpn_ip": "10.8.0.15", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 59}}
+{"@timestamp": "2025-04-12T17:48:32.000000Z", "event": "DISCONNECT", "username": "roxana.toma", "src_ip": "86.120.0.47", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 60}}
+{"@timestamp": "2025-04-12T18:57:34.000000Z", "event": "CONNECT", "username": "roxana.toma", "src_ip": "86.120.1.191", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 61}}
+{"@timestamp": "2025-04-12T19:00:29.000000Z", "event": "CONNECT", "username": "sabin.mateescu", "src_ip": "34.76.0.94", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 62}}
+{"@timestamp": "2025-04-12T19:00:46.000000Z", "event": "DISCONNECT", "username": "horia.badea", "src_ip": "86.120.1.1", "vpn_ip": "10.8.0.15", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 63}}
+{"@timestamp": "2025-04-12T21:17:29.000000Z", "event": "DISCONNECT", "username": "sabin.mateescu", "src_ip": "34.76.0.94", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 64}}
+{"@timestamp": "2025-04-12T21:21:34.000000Z", "event": "DISCONNECT", "username": "roxana.toma", "src_ip": "86.120.1.191", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 65}}
+{"@timestamp": "2025-04-13T07:27:31.000000Z", "event": "CONNECT", "username": "mara.petre", "src_ip": "86.120.0.249", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 66}}
+{"@timestamp": "2025-04-13T07:32:22.000000Z", "event": "CONNECT", "username": "bianca.moldovan", "src_ip": "86.120.1.234", "vpn_ip": "10.8.0.2", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 67}}
+{"@timestamp": "2025-04-13T08:01:39.000000Z", "event": "CONNECT", "username": "mara.petre", "src_ip": "86.120.1.113", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 68}}
+{"@timestamp": "2025-04-13T09:22:39.000000Z", "event": "DISCONNECT", "username": "mara.petre", "src_ip": "86.120.1.113", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 69}}
+{"@timestamp": "2025-04-13T09:47:11.000000Z", "event": "CONNECT", "username": "ioan.mois", "src_ip": "86.120.1.12", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 70}}
+{"@timestamp": "2025-04-13T09:49:31.000000Z", "event": "DISCONNECT", "username": "mara.petre", "src_ip": "86.120.0.249", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 71}}
+{"@timestamp": "2025-04-13T10:32:22.000000Z", "event": "DISCONNECT", "username": "bianca.moldovan", "src_ip": "86.120.1.234", "vpn_ip": "10.8.0.2", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 72}}
+{"@timestamp": "2025-04-13T10:37:31.000000Z", "event": "CONNECT", "username": "anca.rus", "src_ip": "86.120.0.218", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 73}}
+{"@timestamp": "2025-04-13T11:24:25.000000Z", "event": "CONNECT", "username": "alice.draghici", "src_ip": "86.120.1.40", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 74}}
+{"@timestamp": "2025-04-13T12:16:11.000000Z", "event": "DISCONNECT", "username": "ioan.mois", "src_ip": "86.120.1.12", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 75}}
+{"@timestamp": "2025-04-13T12:20:14.000000Z", "event": "CONNECT", "username": "florin.cazan", "src_ip": "34.76.0.24", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 76}}
+{"@timestamp": "2025-04-13T12:22:48.000000Z", "event": "CONNECT", "username": "ioan.mois", "src_ip": "86.120.0.209", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 77}}
+{"@timestamp": "2025-04-13T12:27:48.000000Z", "event": "CONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.1.238", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 78}}
+{"@timestamp": "2025-04-13T12:29:18.000000Z", "event": "CONNECT", "username": "carla.dascalu", "src_ip": "86.120.1.227", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 79}}
+{"@timestamp": "2025-04-13T12:34:25.000000Z", "event": "DISCONNECT", "username": "alice.draghici", "src_ip": "86.120.1.40", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 80}}
+{"@timestamp": "2025-04-13T12:36:10.000000Z", "event": "CONNECT", "username": "sabin.mateescu", "src_ip": "86.120.1.44", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 81}}
+{"@timestamp": "2025-04-13T12:38:31.000000Z", "event": "DISCONNECT", "username": "anca.rus", "src_ip": "86.120.0.218", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 82}}
+{"@timestamp": "2025-04-13T12:47:14.000000Z", "event": "DISCONNECT", "username": "florin.cazan", "src_ip": "34.76.0.24", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 83}}
+{"@timestamp": "2025-04-13T12:49:47.000000Z", "event": "CONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.1.89", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 84}}
+{"@timestamp": "2025-04-13T13:12:10.000000Z", "event": "DISCONNECT", "username": "sabin.mateescu", "src_ip": "86.120.1.44", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 85}}
+{"@timestamp": "2025-04-13T13:23:48.000000Z", "event": "DISCONNECT", "username": "ioan.mois", "src_ip": "86.120.0.209", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 86}}
+{"@timestamp": "2025-04-13T13:41:18.000000Z", "event": "DISCONNECT", "username": "carla.dascalu", "src_ip": "86.120.1.227", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 87}}
+{"@timestamp": "2025-04-13T13:46:48.000000Z", "event": "DISCONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.1.238", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 88}}
+{"@timestamp": "2025-04-13T13:56:39.000000Z", "event": "CONNECT", "username": "alice.draghici", "src_ip": "86.120.1.113", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 89}}
+{"@timestamp": "2025-04-13T14:58:05.000000Z", "event": "CONNECT", "username": "alice.draghici", "src_ip": "86.120.1.38", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 90}}
+{"@timestamp": "2025-04-13T15:49:47.000000Z", "event": "DISCONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.1.89", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 91}}
+{"@timestamp": "2025-04-13T16:14:52.000000Z", "event": "CONNECT", "username": "florin.cazan", "src_ip": "86.120.0.63", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 92}}
+{"@timestamp": "2025-04-13T16:21:05.000000Z", "event": "DISCONNECT", "username": "alice.draghici", "src_ip": "86.120.1.38", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 93}}
+{"@timestamp": "2025-04-13T16:36:39.000000Z", "event": "DISCONNECT", "username": "alice.draghici", "src_ip": "86.120.1.113", "vpn_ip": "10.8.0.17", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 94}}
+{"@timestamp": "2025-04-13T17:54:54.000000Z", "event": "CONNECT", "username": "tudor.iliescu", "src_ip": "86.120.0.3", "vpn_ip": "10.8.0.10", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 95}}
+{"@timestamp": "2025-04-13T18:38:58.000000Z", "event": "CONNECT", "username": "daniela.rusu", "src_ip": "86.120.0.142", "vpn_ip": "10.8.0.19", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 96}}
+{"@timestamp": "2025-04-13T19:06:31.000000Z", "event": "CONNECT", "username": "florin.cazan", "src_ip": "86.120.0.79", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 97}}
+{"@timestamp": "2025-04-13T19:07:52.000000Z", "event": "DISCONNECT", "username": "florin.cazan", "src_ip": "86.120.0.63", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 98}}
+{"@timestamp": "2025-04-13T19:09:58.000000Z", "event": "DISCONNECT", "username": "daniela.rusu", "src_ip": "86.120.0.142", "vpn_ip": "10.8.0.19", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 99}}
+{"@timestamp": "2025-04-13T20:36:54.000000Z", "event": "DISCONNECT", "username": "tudor.iliescu", "src_ip": "86.120.0.3", "vpn_ip": "10.8.0.10", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 100}}
+{"@timestamp": "2025-04-13T21:34:31.000000Z", "event": "DISCONNECT", "username": "florin.cazan", "src_ip": "86.120.0.79", "vpn_ip": "10.8.0.13", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 101}}
+{"@timestamp": "2025-04-14T06:21:55.000000Z", "event": "CONNECT", "username": "carla.dascalu", "src_ip": "86.120.0.214", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 102}}
+{"@timestamp": "2025-04-14T07:16:55.000000Z", "event": "DISCONNECT", "username": "carla.dascalu", "src_ip": "86.120.0.214", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 103}}
+{"@timestamp": "2025-04-14T08:26:20.000000Z", "event": "CONNECT", "username": "suzana.onica", "src_ip": "86.120.0.244", "vpn_ip": "10.8.0.12", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 104}}
+{"@timestamp": "2025-04-14T08:41:39.000000Z", "event": "CONNECT", "username": "bogdan.pavel", "src_ip": "34.76.0.88", "vpn_ip": "10.8.0.18", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 105}}
+{"@timestamp": "2025-04-14T08:47:10.000000Z", "event": "CONNECT", "username": "paul.sandu", "src_ip": "86.120.1.203", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 106}}
+{"@timestamp": "2025-04-14T09:11:39.000000Z", "event": "DISCONNECT", "username": "bogdan.pavel", "src_ip": "34.76.0.88", "vpn_ip": "10.8.0.18", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 107}}
+{"@timestamp": "2025-04-14T09:58:20.000000Z", "event": "DISCONNECT", "username": "suzana.onica", "src_ip": "86.120.0.244", "vpn_ip": "10.8.0.12", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 108}}
+{"@timestamp": "2025-04-14T11:02:52.000000Z", "event": "CONNECT", "username": "ovidiu.pop", "src_ip": "86.120.0.63", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 109}}
+{"@timestamp": "2025-04-14T11:07:10.000000Z", "event": "DISCONNECT", "username": "paul.sandu", "src_ip": "86.120.1.203", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 110}}
+{"@timestamp": "2025-04-14T12:03:18.000000Z", "event": "CONNECT", "username": "andrei.popescu", "src_ip": "54.93.45.208", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 111}}
+{"@timestamp": "2025-04-14T13:00:18.000000Z", "event": "DISCONNECT", "username": "andrei.popescu", "src_ip": "54.93.45.208", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 112}}
+{"@timestamp": "2025-04-14T13:00:55.000000Z", "event": "CONNECT", "username": "andreea.enache", "src_ip": "86.120.0.234", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 113}}
+{"@timestamp": "2025-04-14T13:13:52.000000Z", "event": "DISCONNECT", "username": "ovidiu.pop", "src_ip": "86.120.0.63", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 114}}
+{"@timestamp": "2025-04-14T13:27:55.000000Z", "event": "CONNECT", "username": "ovidiu.pop", "src_ip": "34.76.0.53", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 115}}
+{"@timestamp": "2025-04-14T15:52:55.000000Z", "event": "DISCONNECT", "username": "andreea.enache", "src_ip": "86.120.0.234", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 116}}
+{"@timestamp": "2025-04-14T16:21:55.000000Z", "event": "DISCONNECT", "username": "ovidiu.pop", "src_ip": "34.76.0.53", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 117}}
+{"@timestamp": "2025-04-14T17:52:12.000000Z", "event": "CONNECT", "username": "sabin.mateescu", "src_ip": "86.120.0.100", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 118}}
+{"@timestamp": "2025-04-14T19:20:32.000000Z", "event": "CONNECT", "username": "tudor.iliescu", "src_ip": "34.76.1.89", "vpn_ip": "10.8.0.10", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 119}}
+{"@timestamp": "2025-04-14T19:52:12.000000Z", "event": "DISCONNECT", "username": "sabin.mateescu", "src_ip": "86.120.0.100", "vpn_ip": "10.8.0.9", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 120}}
+{"@timestamp": "2025-04-14T22:17:32.000000Z", "event": "DISCONNECT", "username": "tudor.iliescu", "src_ip": "34.76.1.89", "vpn_ip": "10.8.0.10", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 121}}
+{"@timestamp": "2025-04-15T06:08:44.000000Z", "event": "CONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.0.151", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 122}}
+{"@timestamp": "2025-04-15T07:31:44.000000Z", "event": "DISCONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.0.151", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 123}}
+{"@timestamp": "2025-04-15T07:41:01.000000Z", "event": "CONNECT", "username": "paul.sandu", "src_ip": "86.120.1.27", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 124}}
+{"@timestamp": "2025-04-15T07:58:15.000000Z", "event": "CONNECT", "username": "anca.rus", "src_ip": "34.76.0.71", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 125}}
+{"@timestamp": "2025-04-15T08:17:10.000000Z", "event": "CONNECT", "username": "ioan.mois", "src_ip": "34.76.0.181", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 126}}
+{"@timestamp": "2025-04-15T09:00:15.000000Z", "event": "DISCONNECT", "username": "anca.rus", "src_ip": "34.76.0.71", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 127}}
+{"@timestamp": "2025-04-15T09:12:10.000000Z", "event": "DISCONNECT", "username": "ioan.mois", "src_ip": "34.76.0.181", "vpn_ip": "10.8.0.16", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 128}}
+{"@timestamp": "2025-04-15T09:52:25.000000Z", "event": "CONNECT", "username": "andreea.enache", "src_ip": "86.120.1.226", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 129}}
+{"@timestamp": "2025-04-15T10:01:01.000000Z", "event": "DISCONNECT", "username": "paul.sandu", "src_ip": "86.120.1.27", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 130}}
+{"@timestamp": "2025-04-15T11:36:25.000000Z", "event": "DISCONNECT", "username": "andreea.enache", "src_ip": "86.120.1.226", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 131}}
+{"@timestamp": "2025-04-15T12:29:39.000000Z", "event": "CONNECT", "username": "roxana.toma", "src_ip": "86.120.1.190", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 132}}
+{"@timestamp": "2025-04-15T12:34:33.000000Z", "event": "CONNECT", "username": "carla.dascalu", "src_ip": "86.120.0.68", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 133}}
+{"@timestamp": "2025-04-15T12:38:45.000000Z", "event": "CONNECT", "username": "emil.voinea", "src_ip": "86.120.1.22", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 134}}
+{"@timestamp": "2025-04-15T13:27:23.000000Z", "event": "CONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.0.77", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 135}}
+{"@timestamp": "2025-04-15T13:32:51.000000Z", "event": "CONNECT", "username": "anca.rus", "src_ip": "86.120.0.112", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 136}}
+{"@timestamp": "2025-04-15T13:45:33.000000Z", "event": "CONNECT", "username": "bianca.moldovan", "src_ip": "34.76.0.53", "vpn_ip": "10.8.0.2", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 137}}
+{"@timestamp": "2025-04-15T13:47:11.000000Z", "event": "CONNECT", "username": "ovidiu.pop", "src_ip": "86.120.0.73", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 138}}
+{"@timestamp": "2025-04-15T13:48:26.000000Z", "event": "CONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.0.246", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 139}}
+{"@timestamp": "2025-04-15T14:49:39.000000Z", "event": "DISCONNECT", "username": "roxana.toma", "src_ip": "86.120.1.190", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 140}}
+{"@timestamp": "2025-04-15T14:57:33.000000Z", "event": "DISCONNECT", "username": "bianca.moldovan", "src_ip": "34.76.0.53", "vpn_ip": "10.8.0.2", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 141}}
+{"@timestamp": "2025-04-15T14:58:33.000000Z", "event": "DISCONNECT", "username": "carla.dascalu", "src_ip": "86.120.0.68", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 142}}
+{"@timestamp": "2025-04-15T15:00:11.000000Z", "event": "DISCONNECT", "username": "ovidiu.pop", "src_ip": "86.120.0.73", "vpn_ip": "10.8.0.6", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 143}}
+{"@timestamp": "2025-04-15T15:38:45.000000Z", "event": "DISCONNECT", "username": "emil.voinea", "src_ip": "86.120.1.22", "vpn_ip": "10.8.0.4", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 144}}
+{"@timestamp": "2025-04-15T15:45:26.000000Z", "event": "DISCONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.0.246", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 145}}
+{"@timestamp": "2025-04-15T15:47:18.000000Z", "event": "CONNECT", "username": "petre.lazar", "src_ip": "86.120.1.190", "vpn_ip": "10.8.0.20", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 146}}
+{"@timestamp": "2025-04-15T15:59:51.000000Z", "event": "DISCONNECT", "username": "anca.rus", "src_ip": "86.120.0.112", "vpn_ip": "10.8.0.14", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 147}}
+{"@timestamp": "2025-04-15T16:14:23.000000Z", "event": "DISCONNECT", "username": "mihnea.vasilescu", "src_ip": "86.120.0.77", "vpn_ip": "10.8.0.7", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 148}}
+{"@timestamp": "2025-04-15T17:07:18.000000Z", "event": "DISCONNECT", "username": "petre.lazar", "src_ip": "86.120.1.190", "vpn_ip": "10.8.0.20", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 149}}
+{"@timestamp": "2025-04-15T17:07:48.000000Z", "event": "CONNECT", "username": "mara.petre", "src_ip": "86.120.1.32", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 150}}
+{"@timestamp": "2025-04-15T17:30:48.000000Z", "event": "DISCONNECT", "username": "mara.petre", "src_ip": "86.120.1.32", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 151}}
+{"@timestamp": "2025-04-15T18:15:31.000000Z", "event": "CONNECT", "username": "carla.dascalu", "src_ip": "34.76.1.148", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 152}}
+{"@timestamp": "2025-04-15T18:31:13.000000Z", "event": "CONNECT", "username": "mara.petre", "src_ip": "86.120.0.163", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 153}}
+{"@timestamp": "2025-04-15T19:11:13.000000Z", "event": "DISCONNECT", "username": "mara.petre", "src_ip": "86.120.0.163", "vpn_ip": "10.8.0.8", "status": "SUCCESS"}
+{"index": {"_index": "vpn-logs-2025-04", "_id": 154}}
+{"@timestamp": "2025-04-15T21:00:31.000000Z", "event": "DISCONNECT", "username": "carla.dascalu", "src_ip": "34.76.1.148", "vpn_ip": "10.8.0.11", "status": "SUCCESS"}
