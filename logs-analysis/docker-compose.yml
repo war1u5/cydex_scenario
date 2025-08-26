@@ -12,6 +12,8 @@ services:
     ulimits:
       memlock: { soft: -1, hard: -1 }
     ports: ["9200:9200","9600:9600"]
+    volumes:
+      - os_data:/usr/share/opensearch/data
     networks: [logs-net]
     restart: unless-stopped
 
@@ -24,8 +26,14 @@ services:
     depends_on:
       - opensearch
     ports: ["5601:5601"]
+    volumes:
+      - os_dash_data:/usr/share/opensearch-dashboards/data
     networks: [logs-net]
     restart: unless-stopped
+
+volumes:
+  os_data:
+  os_dash_data:
 
 networks:
   logs-net:
