@@ -1,6 +1,30 @@
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:03:35.000000Z", "event_type": "AUTH", "username": "root", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:03:42.000000Z", "event_type": "AUTH", "username": "a.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:03:48.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:03:53.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:01.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:07.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:14.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:19.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:25.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:32.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:37.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
+{"index": {"_index": "ssh-logs-2025-04"}}
+{"@timestamp": "2025-04-14T15:04:43.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
 {"index": {"_index": "ssh-logs-2025-04", "_id": 1}}
-{"@timestamp": "2025-04-14T15:04:30.000000Z", "event_type": "AUTH", "username": "andrei", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "SUCCESS", "auth_method": "password"}
+{"@timestamp": "2025-04-14T15:04:30.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "SUCCESS", "auth_method": "password"}
 {"index": {"_index": "ssh-logs-2025-04", "_id": 2}}
-{"@timestamp": "2025-04-14T15:05:05.000000Z", "event_type": "SESSION_OPEN", "username": "andrei", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "OPEN", "session_id": "ssh-sess-7f2b"}
+{"@timestamp": "2025-04-14T15:05:05.000000Z", "event_type": "SESSION_OPEN", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "OPEN", "session_id": "ssh-sess-7f2b"}
 {"index": {"_index": "ssh-logs-2025-04", "_id": 3}}
-{"@timestamp": "2025-04-14T15:34:45.000000Z", "event_type": "SESSION_CLOSE", "username": "andrei", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "CLOSE", "session_id": "ssh-sess-7f2b"}
+{"@timestamp": "2025-04-14T15:34:45.000000Z", "event_type": "SESSION_CLOSE", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "CLOSE", "session_id": "ssh-sess-7f2b"}
