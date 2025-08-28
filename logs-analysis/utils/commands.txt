@@ -25,9 +25,11 @@ curl -k -u admin:MyS3curePass! -X POST "https://localhost:9200/ssh-logs-2025-04/
 
 Command logs
 curl -k -u admin:MyS3curePass! -H 'Content-Type: application/x-ndjson' \
-  --data-binary @cmd-logs-2025-04.bulk.jsonl \
+  --data-binary @cmd-logs-2025-04.history.bulk.jsonl \
   "https://localhost:9200/_bulk"
 curl -k -u admin:MyS3curePass! -X POST "https://localhost:9200/cmd-logs-2025-04/_refresh"
+
+
 
 
 Saved Objects ingestion into OpenSearch Dashboards
