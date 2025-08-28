@@ -37,28 +37,28 @@ Email dashboard
 curl -k -u admin:MyS3curePass! -X POST \
   -H "osd-xsrf: true" \
   -F "file=@email-logs-opensearch-saved-objects.ndjson" \
-  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+  "http://localhost:5601/api/saved_objects/_import?overwrite=true"
 
 DNS dashboard
 curl -k -u admin:MyS3curePass! -X POST \
   -H "osd-xsrf: true" \
   -F "file=@dns-logs-opensearch-saved-objects.ndjson" \
-  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+  "http://localhost:5601/api/saved_objects/_import?overwrite=true"
 
 VPN dashboard
 curl -k -u admin:MyS3curePass! -X POST \
   -H "osd-xsrf: true" \
   -F "file=@vpn-logs-opensearch-saved-objects.ndjson" \
-  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+  "http://localhost:5601/api/saved_objects/_import?overwrite=true"
 
 SSH dashboard
 curl -k -u admin:MyS3curePass! -X POST \
   -H "osd-xsrf: true" \
   -F "file=@ssh-logs-opensearch-saved-objects.ndjson" \
-  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+  "http://localhost:5601/api/saved_objects/_import?overwrite=true"
 
 Command dashboard
 curl -k -u admin:MyS3curePass! -X POST \
   -H "osd-xsrf: true" \
   -F "file=@cmd-logs-history-dashboard.ndjson" \
-  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+  "http://localhost:5601/api/saved_objects/_import?overwrite=true"
