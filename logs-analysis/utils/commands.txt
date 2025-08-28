@@ -1,0 +1,62 @@
+Bulk JSONL Logs ingestion into OpenSearch
+Email logs
+curl -k -u admin:admin -H 'Content-Type: application/x-ndjson' \
+  --data-binary @email-logs-2025-04.bulk.jsonl \
+  "https://localhost:9200/_bulk"
+curl -k -u admin:admin -X POST "https://localhost:9200/email-logs-2025-04/_refresh"
+
+DNS logs
+curl -k -u admin:admin -H 'Content-Type: application/x-ndjson' \
+  --data-binary @dns-logs-2025-04.bulk.jsonl \
+  "https://localhost:9200/_bulk"
+curl -k -u admin:admin -X POST "https://localhost:9200/dns-logs-2025-04/_refresh"
+
+VPN logs
+curl -k -u admin:admin -H 'Content-Type: application/x-ndjson' \
+  --data-binary @vpn-logs-2025-04.bulk.jsonl \
+  "https://localhost:9200/_bulk"
+curl -k -u admin:admin -X POST "https://localhost:9200/vpn-logs-2025-04/_refresh"
+
+SSH logs
+curl -k -u admin:admin -H 'Content-Type: application/x-ndjson' \
+  --data-binary @ssh-logs-2025-04.bulk.jsonl \
+  "https://localhost:9200/_bulk"
+curl -k -u admin:admin -X POST "https://localhost:9200/ssh-logs-2025-04/_refresh"
+
+Command logs
+curl -k -u admin:admin -H 'Content-Type: application/x-ndjson' \
+  --data-binary @cmd-logs-2025-04.bulk.jsonl \
+  "https://localhost:9200/_bulk"
+curl -k -u admin:admin -X POST "https://localhost:9200/cmd-logs-2025-04/_refresh"
+
+
+Saved Objects ingestion into OpenSearch Dashboards
+Email dashboard
+curl -k -u admin:admin -X POST \
+  -H "osd-xsrf: true" \
+  -F "file=@email-logs-opensearch-saved-objects.ndjson" \
+  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+
+DNS dashboard
+curl -k -u admin:admin -X POST \
+  -H "osd-xsrf: true" \
+  -F "file=@dns-logs-opensearch-saved-objects.ndjson" \
+  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+
+VPN dashboard
+curl -k -u admin:admin -X POST \
+  -H "osd-xsrf: true" \
+  -F "file=@vpn-logs-opensearch-saved-objects.ndjson" \
+  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+
+SSH dashboard
+curl -k -u admin:admin -X POST \
+  -H "osd-xsrf: true" \
+  -F "file=@ssh-logs-opensearch-saved-objects.ndjson" \
+  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
+
+Command dashboard
+curl -k -u admin:admin -X POST \
+  -H "osd-xsrf: true" \
+  -F "file=@cmd-logs-opensearch-saved-objects.ndjson" \
+  "https://localhost:5601/api/saved_objects/_import?overwrite=true"
