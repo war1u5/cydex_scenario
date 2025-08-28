@@ -752,3 +752,5 @@
 {"@timestamp": "2025-04-15T18:46:09.000000Z", "username": "andrei.popescu", "host_ip": "172.18.0.10", "session_id": "ssh-sess-c14590", "cmdline": "history | tail -n 10"}
 {"index": {"_index": "cmd-logs-2025-04", "_id": 377}}
 {"@timestamp": "2025-04-15T18:55:13.000000Z", "username": "andrei.popescu", "host_ip": "172.18.0.10", "session_id": "ssh-sess-3b5746", "cmdline": "kubectl get ns"}
+{"index": {"_index": "cmd-logs-2025-04", "_id": 378}}
+{"@timestamp": "2025-04-14T15:05:15.000000Z", "username": "andrei.popescu", "host_ip": "172.18.0.10", "session_id": "ssh-sess-7f2b", "cmdline": "sudo apt update && sudo apt install nmap"}
