@@ -2,9 +2,7 @@
 set -Eeuo pipefail
 trap 'rc=$?; echo -e "\033[1;31m[ERROR]\033[0m ${BASH_SOURCE[0]}:$LINENO: \"${BASH_COMMAND}\" -> exit $rc"; exit $rc' ERR
 
-# =========================
-# Flags
-# =========================
+
 SKIP_INGEST=0
 NO_BUILD=0
 
@@ -29,16 +27,16 @@ EOF
   esac
 done
 
-# =========================
-# Config (override via env)
-# =========================
+
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_COMPOSE="${ROOT_DIR}/docker-compose.yml"
 LOGS_DIR="${ROOT_DIR}/logs-analysis"
 LOGS_COMPOSE="${LOGS_DIR}/docker-compose.yml"
 LOAD_LOGS_SCRIPT="${LOGS_DIR}/load_logs.sh"
 
-# Default endpoints
+# =========================
+# endpoints
+# =========================
 OLLAMA_URL="${OLLAMA_URL:-http://127.0.0.1:11434/api/tags}"
 RAG_API_URL="${RAG_API_URL:-http://127.0.0.1:8000/health}"
 LLM_UI_URL="${LLM_UI_URL:-http://127.0.0.1:8501}"
@@ -53,7 +51,7 @@ WAIT_TIMEOUT="${WAIT_TIMEOUT:-600}"
 WAIT_STEP=2
 
 # =========================
-# Helpers
+# helpers
 # =========================
 need() { command -v "$1" >/dev/null || { echo "[FAIL] Need '$1' in PATH"; exit 1; }; }
 log()  { printf "\033[1;34m[INFO]\033[0m %s\n" "$*"; }
@@ -87,25 +85,25 @@ compose_up() {
 }
 
 # =========================
-# Main
+# main
 # =========================
 need docker
 need curl
 
 log "Project root: $ROOT_DIR"
 
-# 1) Up root stack
+# 1) up root stack
 compose_up "$ROOT_DIR"
 wait_http "Ollama API" "$OLLAMA_URL"
-wait_http "RAG API" "$RAG_API_URL"
-wait_http "LLM UI (Streamlit)" "$LLM_UI_URL"
+# wait_http "RAG API" "$RAG_API_URL"
+# wait_http "LLM UI (Streamlit)" "$LLM_UI_URL"
 
-# 2) Up logs-analysis stack
+# 2) up logs-analysis stack
 compose_up "$LOGS_DIR"
 wait_http "OpenSearch" "$OPENSEARCH_URL" -k -u "${OPENSEARCH_USER}:${OPENSEARCH_PASS}"
 wait_http "Dashboards" "$DASHBOARDS_STATUS_URL"
 
-# 3) Optional ingestion
+# 3) optional ingestion
 if (( SKIP_INGEST )); then
   log "Skipping ingestion (--skip-ingest set)."
 else
