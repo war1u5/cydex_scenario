@@ -47,6 +47,21 @@ services:
       - ollama
     restart: unless-stopped
 
+  dev-machine-2:
+    build:
+      context: ./dev-machine-2
+    container_name: dev-machine-2
+    ports:
+      - "2223:22"
+    tty: true
+    stdin_open: true
+    networks:
+      rag-net:
+        ipv4_address: 172.18.0.11
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
   webtop:
     image: lscr.io/linuxserver/webtop:latest
     container_name: webtop
