@@ -1,6 +1,6 @@
 FROM ollama/ollama
 
-RUN apt-get update && apt-get install -y curl
+# RUN apt-get update && apt-get install -y curl
 
 COPY init_ollama.sh /init_ollama.sh
 

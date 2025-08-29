@@ -10,7 +10,6 @@ ROOT_COMPOSE="${ROOT_DIR}/docker-compose.yml"
 LOGS_DIR="${ROOT_DIR}/logs-analysis"
 LOGS_COMPOSE="${LOGS_DIR}/docker-compose.yml"
 
-# Default endpoints (override with env if your ports differ)
 OLLAMA_URL="${OLLAMA_URL:-http://127.0.0.1:11434/api/tags}"
 RAG_API_URL="${RAG_API_URL:-http://127.0.0.1:8000/health}"
 LLM_UI_URL="${LLM_UI_URL:-http://127.0.0.1:8501}"
@@ -21,20 +20,15 @@ OPENSEARCH_PASS="${OPENSEARCH_PASS:-MyS3curePass!}"
 
 DASHBOARDS_URL="${DASHBOARDS_URL:-http://127.0.0.1:5601/api/status}"
 
-# Wait settings
-WAIT_TIMEOUT="${WAIT_TIMEOUT:-600}"   # seconds max per check
-WAIT_STEP="${WAIT_STEP:-2}"           # seconds between tries
+WAIT_TIMEOUT="${WAIT_TIMEOUT:-600}"
+WAIT_STEP="${WAIT_STEP:-2}"
 
-# =========================
-# Helpers
-# =========================
 need() { command -v "$1" >/dev/null || { echo "[FAIL] Need '$1' in PATH"; exit 1; }; }
 log()  { printf "\033[1;34m[INFO]\033[0m %s\n" "$*"; }
 ok()   { printf "\033[1;32m[DONE]\033[0m %s\n" "$*"; }
 warn() { printf "\033[1;33m[WARN]\033[0m %s\n" "$*"; }
 
 wait_http() {
-  # wait_http "Name" "http://..." [extra curl args...]
   local name="$1"; shift
   local url="$1"; shift || true
   local deadline=$((SECONDS + WAIT_TIMEOUT))
@@ -52,7 +46,6 @@ wait_http() {
 }
 
 wait_tcp() {
-  # wait_tcp "Name" host port
   local name="$1"; local host="$2"; local port="$3"
   local deadline=$((SECONDS + WAIT_TIMEOUT))
 
@@ -98,10 +91,6 @@ Stop:
 
 EOF
 }
-
-# =========================
-# Main
-# =========================
 need docker
 need curl
 
@@ -114,15 +103,15 @@ compose_up "$ROOT_DIR"
 # Prefer HTTP probes (fast, deterministic). Keep TCP as fallback example if needed.
 wait_http "Ollama API" "$OLLAMA_URL"
 # RAG API health might not exist yet in your code; if so, comment next line or point to an available endpoint.
-wait_http "RAG API" "$RAG_API_URL"
-wait_http "LLM UI (Streamlit)" "$LLM_UI_URL"
+# wait_http "RAG API" "$RAG_API_URL"
+# wait_http "LLM UI (Streamlit)" "$LLM_UI_URL"
 
 # 2) Up logs-analysis and probe OpenSearch & Dashboards
 compose_up "$LOGS_DIR"
 
 # OpenSearch often needs TLS & auth; use -k for self-signed and -u for basic auth
 wait_http "OpenSearch" "$OPENSEARCH_URL" -k -u "${OPENSEARCH_USER}:${OPENSEARCH_PASS}"
-wait_http "OpenSearch is green (optional fast check)" "${OPENSEARCH_URL}/_cluster/health?wait_for_status=green&timeout=1m" -k -u "${OPENSEARCH_USER}:${OPENSEARCH_PASS}"
+# wait_http "OpenSearch is green (optional fast check)" "${OPENSEARCH_URL}/_cluster/health?wait_for_status=green&timeout=1m" -k -u "${OPENSEARCH_USER}:${OPENSEARCH_PASS}"
 
 # Dashboards readiness
 wait_http "OpenSearch Dashboards" "$DASHBOARDS_URL"
