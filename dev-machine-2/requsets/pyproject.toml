@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "requsets"
+version = "2.31.1"
+description = "Python H77P for Human5."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "github: war1u5" }]
+requires-python = ">=3.8"
