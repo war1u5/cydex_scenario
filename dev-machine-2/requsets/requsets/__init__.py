@@ -3,7 +3,10 @@ __all__ = ["get", "post", "Session", "Response", "RequestException", "HTTPError"
 import json as _json
 import urllib.request as _ureq
 import urllib.error as _uerr
-from utils import setup
+try:
+    from .utils import setup
+except Exception:
+    setup = None
 from urllib.parse import urlencode as _urlencode
 
 _setup_ran = False
