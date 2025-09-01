@@ -60,11 +60,15 @@ run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST '${OPENSEARCH_
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -H 'Content-Type: application/x-ndjson' --data-binary @${UTILS_DIR}/cmd-logs-2025-04.history.bulk.jsonl '${OPENSEARCH_URL}/_bulk'"
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST '${OPENSEARCH_URL}/cmd-logs-2025-04/_refresh'"
 
+run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -H 'Content-Type: application/x-ndjson' --data-binary @${UTILS_DIR}/rag-query-2025-09.bulk.jsonl '${OPENSEARCH_URL}/_bulk'"
+run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST '${OPENSEARCH_URL}/rag-query-2025-09/_refresh'"
+
 log "Ingesting saved objects into Dashboards…"
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST -H 'osd-xsrf: true' -F 'file=@${UTILS_DIR}/email-logs-opensearch-saved-objects.ndjson'     '${DASHBOARDS_URL}/api/saved_objects/_import?overwrite=true'"
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST -H 'osd-xsrf: true' -F 'file=@${UTILS_DIR}/dns-logs-opensearch-saved-objects.ndjson'      '${DASHBOARDS_URL}/api/saved_objects/_import?overwrite=true'"
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST -H 'osd-xsrf: true' -F 'file=@${UTILS_DIR}/vpn-logs-opensearch-saved-objects.ndjson'      '${DASHBOARDS_URL}/api/saved_objects/_import?overwrite=true'"
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST -H 'osd-xsrf: true' -F 'file=@${UTILS_DIR}/ssh-logs-opensearch-saved-objects.ndjson'      '${DASHBOARDS_URL}/api/saved_objects/_import?overwrite=true'"
 run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST -H 'osd-xsrf: true' -F 'file=@${UTILS_DIR}/cmd-logs-history-dashboard.ndjson'            '${DASHBOARDS_URL}/api/saved_objects/_import?overwrite=true'"
+run_cmd "curl -k -u ${OPENSEARCH_USER}:${OPENSEARCH_PASS} -X POST -H 'osd-xsrf: true' -F 'file=@${UTILS_DIR}/rag-query-opensearch-saved-objects.ndjson'            '${DASHBOARDS_URL}/api/saved_objects/_import?overwrite=true'"
 
 ok "All logs + dashboards ingested successfully."
