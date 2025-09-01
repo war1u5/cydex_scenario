@@ -23,7 +23,7 @@
 {"index": {"_index": "ssh-logs-2025-04"}}
 {"@timestamp": "2025-04-14T15:04:43.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "FAILED", "auth_method": "password", "reason": "invalid credentials"}
 {"index": {"_index": "ssh-logs-2025-04", "_id": 1}}
-{"@timestamp": "2025-04-14T15:04:30.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "SUCCESS", "auth_method": "password"}
+{"@timestamp": "2025-04-14T15:05:01.000000Z", "event_type": "AUTH", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "SUCCESS", "auth_method": "password"}
 {"index": {"_index": "ssh-logs-2025-04", "_id": 2}}
 {"@timestamp": "2025-04-14T15:05:05.000000Z", "event_type": "SESSION_OPEN", "username": "andrei.popescu", "src_ip": "10.8.0.5", "dest_ip": "172.18.0.10", "status": "OPEN", "session_id": "ssh-sess-7f2b"}
 {"index": {"_index": "ssh-logs-2025-04", "_id": 3}}

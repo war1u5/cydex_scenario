@@ -217,9 +217,9 @@
 {"index": {"_index": "vpn-logs-2025-04", "_id": 109}}
 {"@timestamp": "2025-04-14T11:07:10.000000Z", "event": "DISCONNECT", "username": "paul.sandu", "src_ip": "86.120.1.203", "vpn_ip": "10.8.0.3", "status": "SUCCESS"}
 {"index": {"_index": "vpn-logs-2025-04", "_id": 110}}
-{"@timestamp": "2025-04-14T12:03:18.000000Z", "event": "CONNECT", "username": "andrei.popescu", "src_ip": "54.93.45.208", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"@timestamp": "2025-04-14T15:03:18.000000Z", "event": "CONNECT", "username": "andrei.popescu", "src_ip": "54.93.45.208", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
 {"index": {"_index": "vpn-logs-2025-04", "_id": 111}}
-{"@timestamp": "2025-04-14T13:00:18.000000Z", "event": "DISCONNECT", "username": "andrei.popescu", "src_ip": "54.93.45.208", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
+{"@timestamp": "2025-04-14T16:00:18.000000Z", "event": "DISCONNECT", "username": "andrei.popescu", "src_ip": "54.93.45.208", "vpn_ip": "10.8.0.5", "status": "SUCCESS"}
 {"index": {"_index": "vpn-logs-2025-04", "_id": 112}}
 {"@timestamp": "2025-04-14T13:00:55.000000Z", "event": "CONNECT", "username": "andreea.enache", "src_ip": "86.120.0.234", "vpn_ip": "10.8.0.21", "status": "SUCCESS"}
 {"index": {"_index": "vpn-logs-2025-04", "_id": 113}}

@@ -2,7 +2,7 @@ FROM debian:bullseye
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        openssh-server sudo curl vim net-tools iputils-ping nmap && \
+        openssh-server sudo curl vim net-tools iputils-ping nmap jq && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/run/sshd
