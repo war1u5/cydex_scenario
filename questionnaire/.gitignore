@@ -1,12 +1,3 @@
-__pycache__/
-*.log
-*.env
-.env
-.vscode/
-*.pyc
-ollama_models/
-webtop-config/
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
