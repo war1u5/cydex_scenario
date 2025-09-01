@@ -33,6 +33,8 @@ ROOT_COMPOSE="${ROOT_DIR}/docker-compose.yml"
 LOGS_DIR="${ROOT_DIR}/logs-analysis"
 LOGS_COMPOSE="${LOGS_DIR}/docker-compose.yml"
 LOAD_LOGS_SCRIPT="${LOGS_DIR}/load_logs.sh"
+QUESTIONNAIRE_DIR="${QUESTIONNAIRE_DIR:-${ROOT_DIR}/questionnaire}"
+QUESTIONNAIRE_COMPOSE="${QUESTIONNAIRE_DIR}/docker-compose.yml"
 
 # =========================
 # endpoints
@@ -97,6 +99,9 @@ compose_up "$ROOT_DIR"
 wait_http "Ollama API" "$OLLAMA_URL"
 # wait_http "RAG API" "$RAG_API_URL"
 # wait_http "LLM UI (Streamlit)" "$LLM_UI_URL"
+
+# 1.5) up questionnaire stack
+compose_up "$QUESTIONNAIRE_DIR"
 
 # 2) up logs-analysis stack
 compose_up "$LOGS_DIR"
