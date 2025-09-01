@@ -34,3 +34,28 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Node / Next
+node_modules
+.next
+out
+dist
+
+# pnpm/yarn caches
+.pnpm-store
+.pnpm
+.yarn
+.npm
+
+# Logs, env
+*.log
+.env
+.env.*
+
+
+node_modules
+.next
+out
+dist
+.pnpm
+.pnpm-store

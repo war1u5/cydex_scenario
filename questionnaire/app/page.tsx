@@ -20,30 +20,30 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "What is the term for malicious instructions hidden within user input to manipulate an LLM's behavior?",
+    question: "At what time was the suspicious email received?",
     answer: "prompt injection",
   },
   {
     id: 2,
-    question: "What technique involves adding adversarial examples to training data to corrupt model behavior?",
+    question: "What is the sender address of the suspicious email?",
     answer: "data poisoning",
     hint: "Corrupting the training dataset",
   },
   {
     id: 3,
-    question: "What is the attack where an LLM is tricked into ignoring its system instructions?",
+    question: "Who was the targeted user, and what is the IP of their workstation?",
     answer: "jailbreaking",
     hint: "Breaking out of safety constraints",
   },
   {
     id: 4,
-    question: "What term describes when an LLM reveals sensitive information from its training data?",
+    question: "Which MITRE ATT&CK sub-technique does this activity map to?",
     answer: "data leakage",
     hint: "Information flowing where it shouldn't",
   },
   {
     id: 5,
-    question: "What is the technique of using special tokens to manipulate LLM responses called?",
+    question: "What was the clicked URL, and what IP address did it resolve to?",
     answer: "token manipulation",
     hint: "Exploiting the tokenization process",
   },
