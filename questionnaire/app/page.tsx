@@ -20,8 +20,8 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "On what date and at what time was the suspicious email received? [Format: HH:MM:SS]",
-    answer: "08:42:10",
+    question: "On what date and at what time was the suspicious email received? [Format: dd.mm|HH:MM:SS]",
+    answer: "15.04|08:42:10",
     // hint: "Check email headers or mail gateway logs."
   },
   {
@@ -196,7 +196,7 @@ export default function Component() {
           </div>
           <p className="text-lg text-blue-200">Test your knowledge of LLM poisoning and AI security vulnerabilities</p>
           <Badge variant="outline" className="mt-2 border-blue-400 text-blue-300">
-            25 Questions
+            22 Questions
           </Badge>
         </div>
 
