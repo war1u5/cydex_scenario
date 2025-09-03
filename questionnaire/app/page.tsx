@@ -192,7 +192,7 @@ export default function Component() {
         <div className="mb-8 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
             <Flag className="h-8 w-8 text-blue-400" />
-            <h1 className="text-4xl font-bold text-white">LLM Security CTF</h1>
+            <h1 className="text-4xl font-bold text-white">AI - LLM Poisoning</h1>
           </div>
           <p className="text-lg text-blue-200">Test your knowledge of LLM poisoning and AI security vulnerabilities</p>
           <Badge variant="outline" className="mt-2 border-blue-400 text-blue-300">
