@@ -1,7 +1,11 @@
 node_modules
+.pnpm-store
 .next
 out
-dist
-.git
-Dockerfile
-pnpm-lock.yaml.dirty
+.env*
+!.env.example
+.vscode
+.DS_Store
+npm-debug.log*
+yarn*.log
+pnpm*.log
