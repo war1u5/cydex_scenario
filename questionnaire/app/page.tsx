@@ -22,133 +22,111 @@ const questions: Question[] = [
     id: 1,
     question: "On what date and at what time was the suspicious email received? [Format: dd.mm|HH:MM:SS]",
     answer: "15.04|08:42:10",
-    // hint: "Check email headers or mail gateway logs."
   },
   {
     id: 2,
     question: "What is the sender address of the suspicious email? [Format: email@domain.tld]",
     answer: "no-reply@workday-update-secure.com",
-    // hint: "From: header (Return-Path can help if spoofed)."
   },
   {
     id: 3,
     question: "Who was the targeted user, and what is the IP of their workstation? [Format: user|A.B.C.D]",
     answer: "andrei.popescu|172.18.0.10",
-    // hint: "Correlate mailbox owner with DHCP/EDR asset inventory."
   },
   {
     id: 4,
     question: "Which MITRE ATT&CK sub-technique does this activity map to? [Format: Txxxx.x—Name]",
     answer: "T1566.002—Spearphishing Link",
-    // hint: "Email-borne initial access often maps to T1566.*"
   },
   {
     id: 5,
     question: "What was the clicked URL, and what IP address did it resolve to? [Format: URL|A.B.C.D]",
     answer: "https://workday-update-secure.com/login|54.93.45.208",
-    // hint: "URL from email body; resolve via DNS logs or passive DNS."
   },
   {
     id: 6,
     question: "At what time did the attacker first connect to the infrastructure? [Format: HH:MM:SS]",
     answer: "15:03:18",
-    // hint: "VPN/SSH/auth logs with successful login event."
   },
   {
     id: 7,
     question: "Which IP address did the attacker use inside the infrastructure? [Format: A.B.C.D]",
     answer: "10.8.0.5",
-    // hint: "Look for the assigned container/bridge/VPN IP in logs."
   },
   {
     id: 8,
     question: "What was the SSH session ID? [Format: exact session/token string]",
     answer: "ssh-sess-7f2b",
-    // hint: "Audit logs (sshd/systemd-journald) or gateway auth logs."
   },
   {
     id: 9,
     question: "What attack technique did the attacker use to log in via SSH? [Format: Txxxx—Name]",
     answer: "T1110—Brute Force",
-    // hint: "Valid Accounts via obtained creds is common (T1078)."
   },
   {
     id: 10,
     question: "At what time did the attacker issue the first command? [Format: HH:MM:SS]",
     answer: "15:05:10",
-    // hint: "Shell history, auditd, or tty keystroke logs."
   },
   {
     id: 11,
     question: "How many services were exposed, and on which IP was the Ollama runtime hosted? [Format: no. services|A.B.C.D]",
     answer: "4|172.18.0.2",
-    // hint: "Review docker compose, Nmap results, and reverse proxy config."
   },
   {
     id: 12,
     question: "What is the domain name corresponding to the IP 172.18.0.5? [Format: FQDN]",
     answer: "rag-api.project-root_rag-net",
-    // hint: "Check /etc/hosts, internal DNS, or app configs."
   },
   {
     id: 13,
     question: "How many API endpoints were exposed? [Format: Number]",
     answer: "3",
-    // hint: "OpenAPI/Swagger spec or proxy access logs."
   },
   {
     id: 14,
     question: "Which API endpoint was attacked? [Format: /path]",
     answer: "/query",
-    // hint: "Look for 4xx/5xx bursts or unusual payloads in API logs."
   },
   {
     id: 15,
     question: "How many commands were executed in total during the attacker’s session? [Format: Number]",
     answer: "28",
-    // hint: "Aggregate shell history + audit events for that session ID."
   },
   {
     id: 16,
     question: "How did the attacker attempt to hide or cover their command history? [Format: command]",
     answer: "cat /dev/null > ~/.bash_history",
-    // hint: "E.g., truncating ~/.bash_history or unsetting HISTFILE."
   },
   {
     id: 17,
     question: "Which MITRE ATT&CK sub-technique applies to the data poisoning attack? [Format: Txxxx.x — Name_Name]",
     answer: "T1565.003-Runtime_Data_Manipulation",
-    // hint: "Data Manipulation variants apply to training/ingest poisoning."
   },
   {
     id: 18,
     question: "Which fake Python library was recommended by the LLM as a result of the poisoning? [Format: package-name]",
     answer: "requsets",
-    // hint: "See LLM chat logs and subsequent pip install events."
   },
   {
     id: 19,
     question: "By which user was the malicious library downloaded? [Format: username]",
     answer: "anca.rus",
-    // hint: "Pip logs, shell history, or EDR process tree."
   },
   {
     id: 20,
     question: "What mechanism was implemented inside the fake library? [Format: mechanism_name]",
     answer: "reverse_shell",
-    // hint: "Backdoored setup.py/__init__.py, cron/task, or import side-effects."
   },
   {
     id: 21,
     question: "In which file was the reverse shell code located? [Format: filename]",
     answer: "setup.py",
-    // hint: "Common: setup.py or package/__init__.py."
   },
   {
     id: 22,
     question: "What IP:port did the reverse shell connect to? [Format: A.B.C.D:port]",
     answer: "54.93.45.208:37453",
-    // hint: "Hardcoded in the malicious code; also visible in firewall/NetFlow."
   },
 ];
 
