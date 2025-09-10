@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Flag } from "lucide-react"
+import HelperRead from "@/components/quiz/HelperRead"
 
 interface Question { id: number; question: string; hint?: string }
 
@@ -78,6 +79,7 @@ export default function QuizClient() {
             <h1 className="text-4xl font-bold text-white">AI - LLM Poisoning</h1>
           </div>
           <p className="text-lg text-blue-200">Test your knowledge of LLM poisoning and AI security vulnerabilities</p>
+          <HelperRead />
           <Badge variant="outline" className="mt-2 border-blue-400 text-blue-300">{questions.length} Questions</Badge>
         </div>
 
